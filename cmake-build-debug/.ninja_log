@@ -1,0 +1,13 @@
+# ninja log v5
+11	1497	7329136932424084	CMakeFiles/WaterSupplyManagement.dir/src/DataParser/DataParser.cpp.obj	86d772a861075661
+506	763	7329118673559624	Project_1.exe	d03e0ed97c55c5e1
+450	691	7329137392686118	WaterSupplyManagement.exe	34e1e915152a0e2f
+1	164	7329141708087611	build.ninja	a6d0aa14896c8379
+53	461	7329136922043903	CMakeFiles/WaterSupplyManagement.dir/src/GraphStructures/Contexts/Contexts.cpp.obj	bc0d0dc60722e4ad
+45	855	7329136925927791	CMakeFiles/WaterSupplyManagement.dir/src/GraphStructures/Station.cpp.obj	e29fe3e66ff26aac
+60	902	7329136926473608	CMakeFiles/WaterSupplyManagement.dir/src/GraphStructures/Vertex.cpp.obj	7e2314bb62117d83
+38	807	7329136925525269	CMakeFiles/WaterSupplyManagement.dir/src/GraphStructures/Pipe.cpp.obj	9c21175319b98904
+18	871	7329136926157934	CMakeFiles/WaterSupplyManagement.dir/src/GraphStructures/Reservoir.cpp.obj	516881f1806f3854
+24	738	7329136924817224	CMakeFiles/WaterSupplyManagement.dir/src/GraphStructures/City.cpp.obj	ebd557b20c2f309d
+30	909	7329136926546989	CMakeFiles/WaterSupplyManagement.dir/src/GraphStructures/Graph.cpp.obj	43b176ef91ced109
+4	450	7329137390335709	CMakeFiles/WaterSupplyManagement.dir/src/main.cpp.obj	3439fc3e5a01c836

@@ -1,0 +1,3 @@
+C:/Users/TiagoF/Desktop/C++/DA/WaterManagement/cmake-build-debug/CMakeFiles/WaterSupplyManagement.dir
+C:/Users/TiagoF/Desktop/C++/DA/WaterManagement/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/TiagoF/Desktop/C++/DA/WaterManagement/cmake-build-debug/CMakeFiles/rebuild_cache.dir

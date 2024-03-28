@@ -26,4 +26,6 @@ add_executable(WaterSupplyManagement
         src/GraphStructures/Contexts/Contexts.h
         src/GraphOperations/GraphOperations.h
         src/GraphOperations/GraphOperations.cpp
+        src/GraphOperations/GraphOperations.cpp
+        src/GraphOperations/GraphOperations.h
 )

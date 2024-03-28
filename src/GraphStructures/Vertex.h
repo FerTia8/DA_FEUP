@@ -17,27 +17,36 @@ public:
 
     unsigned int getId() const;
     const std::string& getCode() const;
+
     bool isVisited() const;
     bool isProcessing() const;
+    Pipe *getPath() const;
 
-    template<typename ContextType, typename VertexType> Pipe *addPipe(VertexType *d, const PipeContext &context) {
+    void setVisited(bool _visited);
+    void setProcessing(bool _processing);
+    void setPath(Pipe* _path);
+
+    template<typename VertexType> Pipe *addPipe(VertexType *d, const PipeContext &context) {
         auto newPipe = new Pipe(this, d, context);
-        adj.push_back(newPipe);
-        d->adj.push_back(newPipe);
+        outgoing.push_back(newPipe);
+        d->incoming.push_back(newPipe);
         return newPipe;
     }
 
-    std::vector<Pipe *> getAdj() const;
+    std::vector<Pipe *> getOutgoing() const;
+    std::vector<Pipe *> getIncoming() const;
 
 protected:
     unsigned int id;
     std::string code;
 
-    std::vector<Pipe*> adj;
+    std::vector<Pipe*> outgoing;
+    std::vector<Pipe*> incoming;
 
     // aux
     bool visited = false;
     bool processing = false;
+    Pipe* path = nullptr;
 };
 
 

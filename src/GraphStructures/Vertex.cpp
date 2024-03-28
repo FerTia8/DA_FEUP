@@ -19,6 +19,26 @@ bool Vertex::isProcessing() const {
     return processing;
 }
 
-std::vector<Pipe *> Vertex::getAdj() const {
-    return adj;
+Pipe *Vertex::getPath() const {
+    return path;
+}
+
+std::vector<Pipe *> Vertex::getOutgoing() const {
+    return outgoing;
+}
+
+std::vector<Pipe *> Vertex::getIncoming() const {
+    return incoming;
+}
+
+void Vertex::setVisited(bool _visited) {
+    visited = _visited;
+}
+
+void Vertex::setProcessing(bool _processing) {
+    processing = _processing;
+}
+
+void Vertex::setPath(Pipe *_path) {
+    path = _path;
 }

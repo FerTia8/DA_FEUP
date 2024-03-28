@@ -129,11 +129,11 @@ namespace DataReader {
         }
         for (const PipeContext& context: pipe_info_container) {
             if (context.service_point_A[0] == 'R' && context.service_point_B[1] == 'S') {
-                graph.addPipe<ReservoirContext, Reservoir, StationContext, Station>(context.service_point_A, context.service_point_B, context);
+                graph.addPipe<Reservoir, Station>(context.service_point_A, context.service_point_B, context);
             } else if (context.service_point_A[1] == 'S' && context.service_point_B[0] == 'C') {
-                graph.addPipe<StationContext, Station, CityContext, City>(context.service_point_A, context.service_point_B, context);
+                graph.addPipe<Station, City>(context.service_point_A, context.service_point_B, context);
             } else if (context.service_point_A[1] == 'S' && context.service_point_B[1] == 'S') {
-                graph.addPipe<StationContext, Station, StationContext, Station>(context.service_point_A, context.service_point_B, context);
+                graph.addPipe<Station, Station>(context.service_point_A, context.service_point_B, context);
             }
         }
     }

@@ -11,7 +11,18 @@ bool Pipe::isDirection() const {
     return direction;
 }
 
-// since dealing with undirected graphs, pass initial vertex so that getDest() returns the second one
-Vertex* Pipe::getDest(Vertex* init_v) const {
-    return (vertex1 == init_v) ? vertex2 : vertex1;
+Vertex *Pipe::getOrig() const {
+    return vertex1;
+}
+
+Vertex* Pipe::getDest() const {
+    return vertex2;
+}
+
+int Pipe::getFlow() const {
+    return flow;
+}
+
+void Pipe::setFlow(int _flow) {
+    flow = _flow;
 }

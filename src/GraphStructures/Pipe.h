@@ -19,13 +19,20 @@ public:
     unsigned int getCapacity() const;
     bool isDirection() const;
 
-    Vertex* getDest(Vertex* init_v) const;
+    Vertex* getDest() const;
+    Vertex* getOrig() const;
+
+    int getFlow() const;
+    void setFlow(int flow);
+
 private:
     Vertex* vertex1;
     Vertex* vertex2;
-
     unsigned int capacity;
     bool direction;
+
+    // aux
+    int flow;
 };
 
 #endif //PROJECT_1_PIPE_H
